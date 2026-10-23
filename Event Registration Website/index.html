@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Event</a></li>
+      <li><a href="group.html">Our Team</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to Our Event!</h1>
+    <img src="event.png" alt="Event Banner">
+    <p>Register now to join our exciting seminar/workshop.</p>
+  </header>
+
+  <!-- Registration Form -->
+  <section>
+    <h2>Register Here</h2>
+    <form id="regForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="ticket">Ticket Type:</label>
+      <select id="ticket">
+        <option value="Regular">Regular</option>
+        <option value="VIP">VIP</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+    <div id="qrContainer"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
